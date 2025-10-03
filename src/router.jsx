@@ -5,10 +5,10 @@ import {
   Navigate,
 } from "react-router-dom";
 import Login from "./views/Login.jsx";
-import MainLayout from "./components/MainLayout";
+import MainLayout from "./components/mainLayout";
 import Dashboard from "./views/Dashboard.jsx";
-import ProtectedRoute from "./components/ProtectedRoute";
-import PublicRoute from "./components/PublicRoute.jsx";
+import ProtectedRoute from "./components/protectedRoute";
+import PublicRoute from "./components/publicRoute";
 const AppRouter = () => {
   const token = localStorage.getItem("token");
 

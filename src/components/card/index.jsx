@@ -1,5 +1,5 @@
 import React from "react";
-import { ICONS } from "../constants/card.jsx";
+import { ICONS } from "../../constants/card.jsx";
 
 const Card = ({ title, value, color = "blue", icon = "users" }) => {
   const colorMap = {

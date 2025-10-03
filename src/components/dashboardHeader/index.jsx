@@ -1,5 +1,5 @@
 import React from "react";
-import Button from "./Button";
+import Index from "../button/index.jsx";
 
 const DashboardHeader = ({ onLogout }) => {
   const logoutIcon = (
@@ -29,19 +29,19 @@ const DashboardHeader = ({ onLogout }) => {
             Visualización de métricas y gráficas
           </p>
         </div>
-        <Button
+        <Index
           onClick={onLogout}
           className="p-2 flex md:hidden"
           icon={logoutIcon}
           title="Cerrar Sesión"
         />
-        <Button
+        <Index
           onClick={onLogout}
           className="hidden md:inline-flex"
           icon={logoutIcon}
         >
           Cerrar Sesión
-        </Button>
+        </Index>
       </div>
     </div>
   );

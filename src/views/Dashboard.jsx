@@ -1,17 +1,17 @@
 import React, { useState, useMemo, useCallback, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 
-import Breadcrumb from "../components/Breadcrumb";
-import CityList from "../components/CityList";
-import CountryList from "../components/CountryList";
-import DashboardHeader from "../components/DashboardHeader";
-import NavigationButtons from "../components/NavigationButtons";
-import OfficeList from "../components/OfficeList";
-import FullScreenSpinner from "../components/FullScreenSpinner";
-import Card from "../components/Card.jsx";
-import BarChart from "../components/BarChart.jsx";
-import Select from "../components/Select.jsx";
-import ErrorMessage from "../components/ErrorMessage.jsx";
+import Breadcrumb from "../components/breadCrumbs";
+import CityList from "../components/cityList";
+import CountryList from "../components/countryList";
+import DashboardHeader from "../components/dashboardHeader";
+import NavigationButtons from "../components/navigationButtons";
+import OfficeList from "../components/officeList";
+import FullScreenSpinner from "../components/fullScreenSpinner";
+import Card from "../components/card";
+import BarChart from "../components/barChart";
+import Select from "../components/select";
+import ErrorMessage from "../components/errorMessage";
 
 import { useDashboardStore } from "../store/useDashboardStore.js";
 import { logoutUser } from "../services/api.js";

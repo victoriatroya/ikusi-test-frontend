@@ -1,13 +1,13 @@
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
-import Input from "../components/Input";
-import Button from "../components/Button";
-import FullScreenSpinner from "../components/FullScreenSpinner";
+import Input from "../components/input";
+import Button from "../components/button";
+import FullScreenSpinner from "../components/fullScreenSpinner";
 import { loginUser } from "../services/api.js";
 
 const Login = () => {
-  const [email, setEmail] = useState("");
-  const [password, setPassword] = useState("");
+  const [email, setEmail] = useState("frontend@ikusi.com");
+  const [password, setPassword] = useState("ikusi123");
   const [showPassword, setShowPassword] = useState(false);
   const [error, setError] = useState("");
   const [isLoading, setIsLoading] = useState(false);

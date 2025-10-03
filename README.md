@@ -4,19 +4,25 @@ git clone https://github.com/victoriatroya/ikusi-test-frontend.git
 cd ikusi-test-frontend
 
 # instalar dependencias
+
+```bash
 npm install
+```
 
 # ejecutar en local
+```bash
 npm run dev
+```
 
+Abre http://localhost:5173 en el navegador para ver el resultado
 # 2. Librerías externas utilizadas
-react-router-dom → navegación entre Login y Home.
+`react-router-dom` → navegación entre Login y Home.
 
-zustand → manejo de estado global.
+`zustand` → manejo de estado global.
 
-chart.js + react-chartjs-2 → visualización de gráficos dinámicos.
+`chart.js `+ `react-chartjs-2 `→ visualización de gráficos dinámicos.
 
-tailwindcss → estilos responsivos y modernos.
+`tailwindcss` → estilos responsivos y modernos.
 
 
 # 3. Estructura del proyecto 
