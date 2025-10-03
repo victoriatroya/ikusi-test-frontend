@@ -8,13 +8,21 @@ import Login from "./views/Login.jsx";
 import MainLayout from "./components/MainLayout";
 import Dashboard from "./views/Dashboard.jsx";
 import ProtectedRoute from "./components/ProtectedRoute";
+import PublicRoute from "./components/PublicRoute.jsx";
 const AppRouter = () => {
   const token = localStorage.getItem("token");
 
   return (
     <Router>
       <Routes>
-        <Route path="/login" element={<Login />} />
+        <Route
+          path="/login"
+          element={
+            <PublicRoute>
+              <Login />
+            </PublicRoute>
+          }
+        />
         <Route
           path="/dashboard"
           element={
