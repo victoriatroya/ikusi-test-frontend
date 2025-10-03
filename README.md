@@ -1,6 +1,6 @@
 # 1. Instrucciones para correr el proyecto desde cero
 # clonar el repo
-git clone https://github.com/tu-usuario/ikusi-test-frontend.git
+git clone https://github.com/victoriatroya/ikusi-test-frontend.git
 cd ikusi-test-frontend
 
 # instalar dependencias
