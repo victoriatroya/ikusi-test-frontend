@@ -1,4 +1,4 @@
-import Spinner from "../spinner";
+import Spinner from "../ui/Spinner.jsx";
 
 const FullScreenSpinner = () => {
   return (

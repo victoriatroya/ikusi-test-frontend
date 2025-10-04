@@ -1,17 +1,17 @@
 import React, { useState, useMemo, useCallback, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 
-import Breadcrumb from "../components/breadCrumbs";
-import CityList from "../components/cityList";
-import CountryList from "../components/countryList";
-import DashboardHeader from "../components/dashboardHeader";
-import NavigationButtons from "../components/navigationButtons";
-import OfficeList from "../components/officeList";
-import FullScreenSpinner from "../components/fullScreenSpinner";
-import Card from "../components/card";
-import BarChart from "../components/barChart";
-import Select from "../components/select";
-import ErrorMessage from "../components/errorMessage";
+import Breadcrumb from "../components/common/BreadCrumbs.jsx";
+import CityList from "../components/features/CityList.jsx";
+import CountryList from "../components/features/CountryList.jsx";
+import DashboardHeader from "../components/common/DashboardHeader.jsx";
+import NavigationButtons from "../components/features/NavigationButtons.jsx";
+import OfficeList from "../components/features/OfficeList.jsx";
+import FullScreenSpinner from "../components/common/FullScreenSpinner.jsx";
+import Card from "../components/ui/Card.jsx";
+import BarChart from "../components/charts/BarChart.jsx";
+import Select from "../components/ui/Select.jsx";
+import ErrorMessage from "../components/common/ErrorMessage.jsx";
 
 import { useDashboardStore } from "../store/useDashboardStore.js";
 import { logoutUser } from "../services/api.js";

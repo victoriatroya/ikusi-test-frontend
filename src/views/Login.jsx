@@ -1,8 +1,8 @@
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
-import Input from "../components/input";
-import Button from "../components/button";
-import FullScreenSpinner from "../components/fullScreenSpinner";
+import Input from "../components/ui/Input.jsx";
+import Button from "../components/ui/Button.jsx";
+import FullScreenSpinner from "../components/common/FullScreenSpinner.jsx";
 import { loginUser } from "../services/api.js";
 
 const Login = () => {
