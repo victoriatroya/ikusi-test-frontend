@@ -1,3 +1,4 @@
+import sha256 from "crypto-js/sha256";
 import { HIERARCHICAL_DATA } from "../mocks/hierarchicalData.js";
 
 const API_CONFIG = {
@@ -58,7 +59,14 @@ export const loginUser = async (username, password) => {
     );
   }
 
-  if (username === "frontend@ikusi.com" && password === "ikusi123") {
+  const hashedPassword = sha256(password).toString();
+
+  const mockHashedPassword = sha256("ikusi123").toString();
+
+  if (
+    username === "frontend@ikusi.com" &&
+    hashedPassword === mockHashedPassword
+  ) {
     return successResponse({
       token: "mock-jwt-token-" + Date.now(),
       user: {

@@ -194,4 +194,5 @@ export const useDashboardStore = create()(
       await get().initialize();
     },
   })),
+  { name: "dashboard-store" },
 );
