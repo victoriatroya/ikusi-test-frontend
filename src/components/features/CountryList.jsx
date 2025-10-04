@@ -5,7 +5,10 @@ const CountryList = ({ countries, onCountryClick }) => {
     return country.cities.reduce(
       (totalRevenue, city) =>
         totalRevenue +
-        city.offices.reduce((cityRevenue, office) => cityRevenue + office.revenue, 0),
+        city.offices.reduce(
+          (cityRevenue, office) => cityRevenue + office.revenue,
+          0,
+        ),
       0,
     );
   };

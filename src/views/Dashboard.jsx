@@ -43,7 +43,7 @@ const Dashboard = () => {
 
   useEffect(() => {
     initialize();
-  }, []);
+  }, [initialize]);
 
   const handleLogout = async () => {
     try {
