@@ -252,6 +252,7 @@ const Dashboard = () => {
           {chartData.labels?.length > 0 && (
             <div className="bg-white/95 backdrop-blur-sm shadow-xl rounded-2xl p-6 mb-6 mt-7">
               <BarChart
+                key={`${selectedCountry?.id || "all"}-${selectedCity?.id || "none"}-${sortBy}`}
                 labels={chartData.labels}
                 datasets={combinedDatasets}
                 title={chartData.title}
