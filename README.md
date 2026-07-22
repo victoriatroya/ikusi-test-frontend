@@ -82,3 +82,6 @@ App.jsx → componente raíz que monta las rutas y layouts.
 main.jsx → punto de entrada de la app.
 
 router.jsx → configuración de navegación, incluyendo ProtectedRoute y PublicRoute.
+
+
+![CI](https://github.com/victoriatroya/ikusi-test-frontend/actions/workflows/ci.yml/badge.svg)
