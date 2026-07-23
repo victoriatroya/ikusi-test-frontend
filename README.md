@@ -84,4 +84,14 @@ main.jsx → punto de entrada de la app.
 router.jsx → configuración de navegación, incluyendo ProtectedRoute y PublicRoute.
 
 
+# 6. CI/CD
+
 ![CI](https://github.com/victoriatroya/ikusi-test-frontend/actions/workflows/ci.yml/badge.svg)
+
+Este proyecto cuenta con un pipeline automatizado usando **GitHub Actions** que se ejecuta en cada push y pull request a `master`:
+
+- **Lint** → verifica la calidad del código con ESLint.
+- **Build** → compila la aplicación con Vite y genera el artefacto de producción.
+- **Deploy** → publica automáticamente a GitHub Pages, solo si lint y build pasan y únicamente en push a `master` (los PRs no despliegan).
+
+El deploy usa autenticación **OIDC** (`id-token: write`), sin tokens estáticos almacenados.
