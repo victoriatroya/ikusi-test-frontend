@@ -92,6 +92,7 @@ Este proyecto cuenta con un pipeline automatizado usando **GitHub Actions** que 
 
 - **Lint** → verifica la calidad del código con ESLint.
 - **Build** → compila la aplicación con Vite y genera el artefacto de producción.
+- **Test** → ejecuta los tests unitarios con Vitest
 - **Deploy** → publica automáticamente a GitHub Pages, solo si lint y build pasan y únicamente en push a `master` (los PRs no despliegan).
 
 El deploy usa autenticación **OIDC** (`id-token: write`), sin tokens estáticos almacenados.
